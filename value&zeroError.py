@@ -14,7 +14,7 @@ while True:
     except ZeroDivisionError:
         print("No se puede dividir los numeros")
     except ValueError:
-        print("Se debe dividir por dos numeros")
+        print("Ingrese un numero valido")
     else:
         print(resultado)
         break

@@ -4,7 +4,7 @@ def registroErrores(archivo_N):
     try:
         with open(archivo_N, "r") as archivo:
             contenido = archivo.read()    
-            print("El contenido es")
+            print("El contenido es: ")
             print(contenido)
         
     except FileNotFoundError:
@@ -14,7 +14,7 @@ def registroErrores(archivo_N):
 
         with open(nombreArchivo, "w") as archivo:
             archivo.write(f"{archivo_N}")
-            print(f"Se ha creado el archivo {archivo_N} al no existir")
+            print(f"El archivo seleccionado no existe, se ha creado el mismo {archivo_N} a la base de datos")
 
 archivo_N = input("Seleccione el archivo: ")
 registroErrores(archivo_N)          

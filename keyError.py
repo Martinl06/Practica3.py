@@ -1,15 +1,15 @@
 
 dicc = {
-    "Nombre":"Miguel",
-    "Edad": "30",
-    "Apellido":"Sanchez"
+    "nombre":"Miguel",
+    "edad": "30",
+    "apellido":"Sanchez"
 }
 
 consulta = input("Escriba su consulta: ")
 
 def consultas():
     try:
-        resultado = dicc[consulta].upper()
+        resultado = dicc[consulta]
         print(f"Su consulta es: {resultado}")
     except KeyError:
         print("Su consulta no esta en la base de datos")
